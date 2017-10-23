@@ -1,0 +1,252 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="12.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="..\utl-core\src\camera.cpp" />
+    <ClCompile Include="..\utl-core\src\game.cpp" />
+    <ClCompile Include="..\utl-core\src\game_draw.cpp" />
+    <ClCompile Include="..\utl-core\src\game_events.cpp" />
+    <ClCompile Include="..\utl-core\src\game_map.cpp" />
+    <ClCompile Include="..\utl-core\src\game_map_generator.cpp" />
+    <ClCompile Include="..\utl-core\src\game_map_preparer.cpp" />
+    <ClCompile Include="..\utl-core\src\game_map_reader.cpp" />
+    <ClCompile Include="..\utl-core\src\game_map_settings.cpp" />
+    <ClCompile Include="..\utl-core\src\game_map_writer.cpp" />
+    <ClCompile Include="..\utl-core\src\gui_manager.cpp" />
+    <ClCompile Include="..\utl-core\src\path_builder.cpp" />
+    <ClCompile Include="..\utl-core\src\resource_manager.cpp" />
+    <ClCompile Include="..\utl-core\src\texture.cpp" />
+    <ClCompile Include="..\utl-core\src\timer.cpp" />
+    <ClCompile Include="..\utl-core\src\utils.cpp" />
+    <ClCompile Include="src\main.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\utl-core\src\bundle_helper.h" />
+    <ClInclude Include="..\utl-core\src\camera.h" />
+    <ClInclude Include="..\utl-core\src\config.h" />
+    <ClInclude Include="..\utl-core\src\game.h" />
+    <ClInclude Include="..\utl-core\src\game_map.h" />
+    <ClInclude Include="..\utl-core\src\game_map_generator.h" />
+    <ClInclude Include="..\utl-core\src\game_map_preparer.h" />
+    <ClInclude Include="..\utl-core\src\game_map_reader.h" />
+    <ClInclude Include="..\utl-core\src\game_map_settings.h" />
+    <ClInclude Include="..\utl-core\src\game_map_writer.h" />
+    <ClInclude Include="..\utl-core\src\gui_manager.h" />
+    <ClInclude Include="..\utl-core\src\path_builder.h" />
+    <ClInclude Include="..\utl-core\src\resource_manager.h" />
+    <ClInclude Include="..\utl-core\src\texture.h" />
+    <ClInclude Include="..\utl-core\src\timer.h" />
+    <ClInclude Include="..\utl-core\src\utils.h" />
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{491AA775-F93D-4115-B53D-3261CBC67DD9}</ProjectGuid>
+    <RootNamespace>LiveHard</RootNamespace>
+    <Keyword>Win32Proj</Keyword>
+    <WindowsTargetPlatformVersion>8.1</WindowsTargetPlatformVersion>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <PlatformToolset>v120</PlatformToolset>
+    <CharacterSet>Unicode</CharacterSet>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <PlatformToolset>v120</PlatformToolset>
+    <CharacterSet>Unicode</CharacterSet>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <PlatformToolset>v141</PlatformToolset>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <PlatformToolset>v120</PlatformToolset>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup>
+    <_ProjectFileVersion>11.0.61030.0</_ProjectFileVersion>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <OutDir>$(SolutionDir)$(Configuration)\</OutDir>
+    <IntDir>$(Configuration)\</IntDir>
+    <LinkIncremental>true</LinkIncremental>
+    <TargetName>lbsa-main</TargetName>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <LinkIncremental>true</LinkIncremental>
+    <TargetName>lbsa-main</TargetName>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <OutDir>$(SolutionDir)$(Configuration)\</OutDir>
+    <IntDir>$(Configuration)\</IntDir>
+    <LinkIncremental>false</LinkIncremental>
+    <TargetName>lbsa-main</TargetName>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <LinkIncremental>false</LinkIncremental>
+    <TargetName>lbsa-main</TargetName>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <PreBuildEvent>
+      <Command>copy ..\SDL2\lib\x86\SDL2.dll $(OutDir)
+copy ..\SDL2_image\lib\x86\SDL2_image.dll $(OutDir)
+copy ..\SDL2_image\lib\x86\libpng16-16.dll $(OutDir)
+copy ..\SDL2_image\lib\x86\zlib1.dll $(OutDir)
+copy ..\SDL2_ttf\lib\x86\SDL2_ttf.dll $(OutDir)
+copy ..\SDL2_ttf\lib\x86\libfreetype-6.dll $(OutDir)
+copy ..\physfs\lib\x86\physfs.dll $(OutDir)
+</Command>
+    </PreBuildEvent>
+    <ClCompile>
+      <Optimization>Disabled</Optimization>
+      <AdditionalIncludeDirectories>../physfs/include;../utl-core/src;%(AdditionalIncludeDirectories);../SDL2/include;../SDL2_image/include;../SDL2_ttf/include</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>WIN32;_DEBUG;_CONSOLE;_CRT_SECURE_NO_WARNINGS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <MinimalRebuild>true</MinimalRebuild>
+      <BasicRuntimeChecks>EnableFastChecks</BasicRuntimeChecks>
+      <RuntimeLibrary>MultiThreadedDebugDLL</RuntimeLibrary>
+      <PrecompiledHeader />
+      <WarningLevel>Level3</WarningLevel>
+      <DebugInformationFormat>EditAndContinue</DebugInformationFormat>
+      <DisableSpecificWarnings>4244;4267</DisableSpecificWarnings>
+    </ClCompile>
+    <Link>
+      <AdditionalDependencies>../physfs/lib/x86/physfs.lib;../SDL2/lib/x86/SDL2.lib;../SDL2/lib/x86/SDL2main.lib;../SDL2_image/lib/x86/SDL2_image.lib;../SDL2_ttf/lib/x86/SDL2_ttf.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <SubSystem>Console</SubSystem>
+      <TargetMachine>MachineX86</TargetMachine>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <PreBuildEvent>
+      <Command>copy ..\SDL2\lib\x64\SDL2.dll $(OutDir)
+copy ..\SDL2_image\lib\x64\SDL2_image.dll $(OutDir)
+copy ..\SDL2_image\lib\x64\libpng16-16.dll $(OutDir)
+copy ..\SDL2_image\lib\x64\zlib1.dll $(OutDir)
+copy ..\SDL2_ttf\lib\x64\SDL2_ttf.dll $(OutDir)
+copy ..\SDL2_ttf\lib\x64\libfreetype-6.dll $(OutDir)
+copy ..\physfs\lib\x64\physfs.dll $(OutDir)
+</Command>
+    </PreBuildEvent>
+    <ClCompile>
+      <Optimization>Disabled</Optimization>
+      <AdditionalIncludeDirectories>../physfs/include/;../utl-core/src;%(AdditionalIncludeDirectories);../SDL2/include;../SDL2_image/include;../SDL2_ttf/include</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>WIN32;_DEBUG;_CONSOLE;_CRT_SECURE_NO_WARNINGS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <BasicRuntimeChecks>EnableFastChecks</BasicRuntimeChecks>
+      <RuntimeLibrary>MultiThreadedDebugDLL</RuntimeLibrary>
+      <PrecompiledHeader>
+      </PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <DisableSpecificWarnings>4244;4267</DisableSpecificWarnings>
+    </ClCompile>
+    <Link>
+      <AdditionalDependencies>../physfs/lib/x64/physfs.lib;../SDL2/lib/x64/SDL2.lib;../SDL2/lib/x64/SDL2main.lib;../SDL2_image/lib/x64/SDL2_image.lib;../SDL2_ttf/lib/x64/SDL2_ttf.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <SubSystem>Console</SubSystem>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <PreBuildEvent>
+      <Command>copy ..\SDL2\lib\x86\SDL2.dll $(OutDir)
+copy ..\SDL2_image\lib\x86\SDL2_image.dll $(OutDir)
+copy ..\SDL2_image\lib\x86\libpng16-16.dll $(OutDir)
+copy ..\SDL2_image\lib\x86\zlib1.dll $(OutDir)
+copy ..\SDL2_ttf\lib\x86\SDL2_ttf.dll $(OutDir)
+copy ..\SDL2_ttf\lib\x86\libfreetype-6.dll $(OutDir)
+ copy ..\physfs\lib\x86\physfs.dll $(OutDir)</Command>
+    </PreBuildEvent>
+    <ClCompile>
+      <Optimization>MaxSpeed</Optimization>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <AdditionalIncludeDirectories>../physfs/include;../utl-core/src;%(AdditionalIncludeDirectories);../SDL2/include;../SDL2_image/include;../SDL2_ttf/include</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>UTLRELEASE;WIN32;NDEBUG;_CONSOLE;_CRT_SECURE_NO_WARNINGS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <PrecompiledHeader />
+      <WarningLevel>Level3</WarningLevel>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <DisableSpecificWarnings>4244;4267</DisableSpecificWarnings>
+    </ClCompile>
+    <Link>
+      <AdditionalDependencies>../physfs/lib/x86/physfs.lib;../SDL2/lib/x86/SDL2.lib;../SDL2/lib/x86/SDL2main.lib;../SDL2_image/lib/x86/SDL2_image.lib;../SDL2_ttf/lib/x86/SDL2_ttf.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <SubSystem>Windows</SubSystem>
+      <OptimizeReferences>true</OptimizeReferences>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <TargetMachine>MachineX86</TargetMachine>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <PreBuildEvent>
+      <Command>copy ..\SDL2\lib\x64\SDL2.dll $(OutDir)
+copy ..\SDL2_image\lib\x64\SDL2_image.dll $(OutDir)
+copy ..\SDL2_image\lib\x64\libpng16-16.dll $(OutDir)
+copy ..\SDL2_image\lib\x64\zlib1.dll $(OutDir)
+copy ..\SDL2_ttf\lib\x64\SDL2_ttf.dll $(OutDir)
+copy ..\SDL2_ttf\lib\x64\libfreetype-6.dll $(OutDir)
+copy ..\physfs\lib\x64\physfs.dll $(OutDir)
+
+</Command>
+    </PreBuildEvent>
+    <ClCompile>
+      <Optimization>MaxSpeed</Optimization>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <AdditionalIncludeDirectories>../physfs/include/;../utl-core/src;%(AdditionalIncludeDirectories);../SDL2/include;../SDL2_image/include;../SDL2_ttf/include</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>UTLRELEASE;WIN32;NDEBUG;_CONSOLE;_CRT_SECURE_NO_WARNINGS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <PrecompiledHeader>
+      </PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <DisableSpecificWarnings>4244;4267</DisableSpecificWarnings>
+    </ClCompile>
+    <Link>
+      <AdditionalDependencies>../physfs/lib/x64/physfs.lib;;../SDL2/lib/x64/SDL2.lib;../SDL2/lib/x64/SDL2main.lib;../SDL2_image/lib/x64/SDL2_image.lib;../SDL2_ttf/lib/x64/SDL2_ttf.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <SubSystem>Windows</SubSystem>
+      <OptimizeReferences>true</OptimizeReferences>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+    </Link>
+  </ItemDefinitionGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>
