@@ -5,7 +5,7 @@
 #include "game_map_writer.h"
 #include "game_map_settings.h"
 
-using namespace livehard;
+using namespace utl;
 
 CEXPORT void lhcoreGenerateMap( int *map, int size, int coastwidth, int trees,
                                int lakes, int grave_fields, int drygrass_fields,
